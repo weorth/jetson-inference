@@ -251,7 +251,7 @@ function install_pytorch()
 {
 	local pytorch_version=$1
 	local python_version=$2
-     local l4t_release=$3
+    local l4t_release=$3
 	local l4t_revision=$4
 	
 	if [ $pytorch_version = "1.1.0" ]; then
@@ -425,7 +425,7 @@ function install_pytorch_v140_python36_jp42()
 	install_deb_package "libopenmpi-dev" FOUND_OPENMPI
 
 	# install pip packages
-	pip3 install Cython
+	pip3 install 'Cython<3'
 	pip3 install numpy --verbose
 
 	# install pytorch wheel
@@ -507,7 +507,7 @@ function install_pytorch_v140_python36_jp44()
 	install_deb_package "libopenmpi-dev" FOUND_OPENMPI
 
 	# install pip packages
-	pip3 install Cython
+	pip3 install 'Cython<3'
 	pip3 install numpy --verbose
 	pip3 install tensorboard --verbose
 	
@@ -548,7 +548,7 @@ function install_pytorch_v160_python36_jp44()
 	install_deb_package "libopenmpi-dev" FOUND_OPENMPI
 
 	# install pip packages
-	pip3 install Cython
+	pip3 install 'Cython<3'
 	pip3 install numpy --verbose
 	pip3 install tensorboard --verbose
 	
@@ -591,7 +591,7 @@ function install_pytorch_v1120_python38_jp50()
 	install_deb_package "ninja-build" FOUND_NINJA
 	
 	# install pip packages
-	pip3 install Cython
+	pip3 install 'Cython<3'
 	pip3 install numpy --verbose
 	pip3 install tensorboard --verbose
 	
@@ -634,7 +634,7 @@ function install_pytorch_v200_python38_jp50()
 	install_deb_package "ninja-build" FOUND_NINJA
 	
 	# install pip packages
-	pip3 install Cython
+	pip3 install 'Cython<3'
 	pip3 install numpy --verbose
 	pip3 install tensorboard --verbose
 	pip3 install onnx --verbose
@@ -678,7 +678,7 @@ function install_pytorch_v210_python310_jp60()
 	install_deb_package "ninja-build" FOUND_NINJA
 	
 	# install pip packages
-	pip3 install Cython
+	pip3 install 'Cython<3'
 	pip3 install numpy --verbose
 	pip3 install tensorboard --verbose
 	pip3 install onnx --verbose
