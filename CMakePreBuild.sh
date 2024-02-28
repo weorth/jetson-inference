@@ -61,7 +61,7 @@ if [ $ARCH != "x86_64" ]; then
 fi
 
 # install cython for if numpy gets built by later packages
-pip3 install --no-cache-dir --verbose --upgrade Cython
+pip3 install --no-cache-dir --verbose --upgrade 'Cython<3'
 
 # download/install models and PyTorch
 if [ $BUILD_CONTAINER = "NO" ]; then

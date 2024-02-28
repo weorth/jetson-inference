@@ -77,7 +77,7 @@ COPY python/training/detection/ssd/requirements.txt /tmp/pytorch_ssd_requirement
 COPY python/www/flask/requirements.txt /tmp/flask_requirements.txt
 COPY python/www/dash/requirements.txt /tmp/dash_requirements.txt
 
-RUN pip3 install --no-cache-dir --verbose --upgrade Cython && \
+RUN pip3 install --no-cache-dir --verbose --upgrade 'Cython<3' && \
     pip3 install --no-cache-dir --verbose -r /tmp/pytorch_ssd_requirements.txt && \
     pip3 install --no-cache-dir --verbose -r /tmp/flask_requirements.txt && \
     pip3 install --no-cache-dir --verbose -r /tmp/dash_requirements.txt
