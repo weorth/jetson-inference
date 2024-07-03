@@ -12,6 +12,7 @@ Follow the **[Hello AI World](#hello-ai-world)** tutorial for running inference 
 ### Table of Contents
 
 * [Hello AI World](#hello-ai-world)
+* [Jetson AI Lab](#jetson-ai-lab)
 * [Video Walkthroughs](#video-walkthroughs)
 * [API Reference](#api-reference)
 * [Code Examples](#code-examples)
@@ -79,6 +80,24 @@ Hello AI World can be run completely onboard your Jetson, including live inferen
 * [Camera Streaming and Multimedia](docs/aux-streaming.md)
 * [Image Manipulation with CUDA](docs/aux-image.md)
 * [DNN Inference Nodes for ROS/ROS2](https://github.com/dusty-nv/ros_deep_learning)
+
+## Jetson AI Lab
+
+<a href="https://www.jetson-ai-lab.com"><img align="right" width="200" height="200" src="https://nvidia-ai-iot.github.io/jetson-generative-ai-playground/images/JON_Gen-AI-panels.png"></a>
+
+The [**Jetson AI Lab**](https://www.jetson-ai-lab.com) has additional tutorials on LLMs, Vision Transformers (ViT), and Vision Language Models (VLM) that run on Orin (and in some cases Xavier).  Check out some of these:
+
+<a href="https://www.jetson-ai-lab.com/tutorial_nanoowl.html"><img src="https://github.com/NVIDIA-AI-IOT/nanoowl/raw/main/assets/jetson_person_2x.gif"></a>
+> [NanoOWL - Open Vocabulary Object Detection ViT](https://www.jetson-ai-lab.com/tutorial_nanoowl.html) (container: [`nanoowl`](/packages/vit/nanoowl)) 
+
+<a href="https://youtu.be/X-OXxPiUTuU"><img width="600px" src="https://raw.githubusercontent.com/dusty-nv/jetson-containers/docs/docs/images/live_llava.gif"></a>
+> [Live Llava on Jetson AGX Orin](https://youtu.be/X-OXxPiUTuU) (container: [`local_llm`](/packages/llm/local_llm#live-llava)) 
+
+<a href="https://youtu.be/dRmAGGuupuE"><img width="600px" src="https://raw.githubusercontent.com/dusty-nv/jetson-containers/docs/docs/images/live_llava_bear.jpg"></a>
+> [Live Llava 2.0 - VILA + Multimodal NanoDB on Jetson Orin](https://youtu.be/X-OXxPiUTuU) (container: [`local_llm`](/packages/llm/local_llm#live-llava)) 
+
+<a href="https://youtu.be/ayqKpQNd1Jw"><img src="https://raw.githubusercontent.com/dusty-nv/jetson-containers/docs/docs/images/nanodb_horse.gif"></a>
+> [Realtime Multimodal VectorDB on NVIDIA Jetson](https://www.youtube.com/watch?v=wzLHAgDxMjQ) (container: [`nanodb`](/packages/vectordb/nanodb))  
 
 ## Video Walkthroughs
 
